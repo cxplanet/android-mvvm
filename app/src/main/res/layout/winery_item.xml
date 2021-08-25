@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/winery_card_logo"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        tools:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/winery_card_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_toEndOf="@id/winery_card_logo"
+        tools:text="Restaurant name" />
+
+    <TextView
+        android:id="@+id/winery_card_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/winery_card_name"
+        android:layout_marginStart="4dp"
+        android:layout_toEndOf="@id/winery_card_logo"
+        tools:text="Address" />
+
+    <TextView
+        android:id="@+id/winery_card_city_state_zip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/winery_card_address"
+        android:layout_marginStart="4dp"
+        android:layout_toEndOf="@id/winery_card_logo"
+        tools:text="City, State  Zipcode" />
+</RelativeLayout>
+
